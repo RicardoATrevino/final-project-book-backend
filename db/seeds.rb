@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+User.create!(name: "Rico", email: "exmaple@email.com")
+
+Book.create!(title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", description: "The story follows the shepherd boy Santiago in his journey across North Africa to the pyramids of Egypt after he dreams of finding a treasure there.")
