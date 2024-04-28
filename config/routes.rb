@@ -12,4 +12,9 @@ Rails.application.routes.draw do
   get "/books/:id" => "books#show"
 
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+
+  post "/favorited" => "favoriteds#create"
+  get "/favorited" => "favoriteds#index"
+  delete "/favorited/:id" => "favoriteds#destroy"
 end

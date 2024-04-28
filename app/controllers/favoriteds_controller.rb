@@ -1,22 +1,21 @@
 class FavoritedsController < ApplicationController
   def create
-    @favorited = CartedProduct.create(
+    @favorited = Favorited.create(
       user_id: current_user.id,
       book_id: params[:book_id],
-      quantity: params[:quantity],
-      status: "carted",
+      status: "Favorited",
     )
     render :show
   end
 
   def index
-    @carted_products = current_user.carted_products.where(status: "carted")
+    @favoriteds = current_user.favoriteds.where(status: "Favorited")
     render :index
   end
 
   def destroy
-    carted_product = CartedProduct.find_by(id: params[:id])
-    carted_product.update(status: "removed")
-    render json: { message: "Carted product destroyed!" }
+    favorited = Favorited.find_by(id: params[:id])
+    favorited.update(status: "removed")
+    render json: { message: "Favorited Book destroyed!" }
   end
 end

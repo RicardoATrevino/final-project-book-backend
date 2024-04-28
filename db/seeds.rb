@@ -8,6 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-User.create!(name: "Rico", email: "exmaple@email.com")
+User.create!(name: "Rico", password_digest: "password", email: "exmaple@email.com")
 
 Book.create!(title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", description: "The story follows the shepherd boy Santiago in his journey across North Africa to the pyramids of Egypt after he dreams of finding a treasure there.")
+
+Favoriteds.create(User_id: 0, Book_id: 0)
