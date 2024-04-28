@@ -1,7 +1,6 @@
-  json.id book.id
-  json.title book.title
-  json.author book.author
-  json.genre book.genre
-  json.description book.description
-  json.created_at book.created_at
-  json.updated_at book.updated_at
+  json.id user.id
+  json.name user.name
+  json.email user.email
+  json.image_url user.image_url
+  json.created_at user.created_at
+  json.updated_at user.updated_at
