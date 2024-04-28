@@ -12,4 +12,4 @@ User.create!(name: "Rico", password_digest: "password", email: "exmaple@email.co
 
 Book.create!(title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", description: "The story follows the shepherd boy Santiago in his journey across North Africa to the pyramids of Egypt after he dreams of finding a treasure there.")
 
-Favoriteds.create(User_id: 0, Book_id: 0)
+Favorited.create(User_id: 1, Book_id: 1)
