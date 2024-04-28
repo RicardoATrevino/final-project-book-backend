@@ -1,4 +1,6 @@
 class FavoritedsController < ApplicationController
+  before_action :authenticate_user
+
   def create
     @favorited = Favorited.create(
       user_id: current_user.id,
@@ -9,7 +11,7 @@ class FavoritedsController < ApplicationController
   end
 
   def index
-    @favoriteds = current_user.favoriteds.where(status: "Favorited")
+    @favoriteds = Favorited.all
     render :index
   end
 
