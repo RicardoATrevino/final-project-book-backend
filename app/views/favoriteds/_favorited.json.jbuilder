@@ -1,2 +1,4 @@
-json.extract! favorited, :id, :created_at, :updated_at
-json.url favorited_url(favorited, format: :json)
+json.id favorited.id
+json.book favorited.book
+json.user_id favorited.user_id
+json.email favorited.user.email
