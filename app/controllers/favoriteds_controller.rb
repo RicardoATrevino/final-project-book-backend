@@ -10,7 +10,7 @@ class FavoritedsController < ApplicationController
   end
 
   def index
-    @favoriteds = Favorited.all
+    @favoriteds = current_user.favoriteds
     render :index
   end
 
