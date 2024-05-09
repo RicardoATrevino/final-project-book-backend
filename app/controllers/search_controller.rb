@@ -2,8 +2,8 @@ class SearchController < ApplicationController
   def search
     query = params[:q]
     response = HTTP.get("http://openlibrary.org/search.json?q=#{query}")
-    body = response.body
+    body = response.parse
 
-    render json: body
+    render json: body["docs"]
   end
 end
