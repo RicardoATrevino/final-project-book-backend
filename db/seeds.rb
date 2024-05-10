@@ -12,9 +12,9 @@ User.create!(name: "Rico", password: "password", email: "example@email.com")
 User.create!(name: "Mari", password: "password", email: "example_2@email.com")
 User.create!(name: "Elisha", password: "password", email: "example_3@email.com")
 
-Book.create!(title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", description: "The story follows the shepherd boy Santiago in his journey across North Africa to the pyramids of Egypt after he dreams of finding a treasure there.")
-Book.create!(title: "The Pragmatic Programmer", author: "David Thomas - Andrew Hunt", genre: "educational", description: "Tech Book that claims that you would read and reread with fresh insights every single time.")
-Book.create!(title: "Algorithms", author: "Panos Louridas", genre: "Educational", description: "An accessible intro to algorithms, explaining not just what they are but how they work with examples from a wide range of application areas")
+Book.create!(title: "The Alchemist", author_name: "Paulo Coelho", first_publish_year: 1988, description: "The story follows the shepherd boy Santiago in his journey across North Africa to the pyramids of Egypt after he dreams of finding a treasure there.")
+Book.create!(title: "The Pragmatic Programmer", author_name: "David Thomas - Andrew Hunt", first_publish_year: 1999, description: "Tech Book that claims that you would read and reread with fresh insights every single time.")
+Book.create!(title: "Algorithms", author_name: "Panos Louridas", first_publish_year: 2020, description: "An accessible intro to algorithms, explaining not just what they are but how they work with examples from a wide range of application areas")
 
 Favorited.create!(user_id: 1, book_id: 1)
 Favorited.create!(user_id: 2, book_id: 2)

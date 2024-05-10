@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get "/books/:id" => "books#show"
   get "/search" => "search#search"
 
+  post "/favorite" => "search#favorite"
+
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
 
