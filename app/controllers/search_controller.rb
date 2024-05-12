@@ -12,10 +12,10 @@ class SearchController < ApplicationController
       author_name: params[:author_name],
       first_publish_year: params[:first_publish_year],
     )
-    @favorite = Favorite.find_or_create_by(
+    @favorited = Favorited.find_or_create_by(
       user_id: current_user.id,
       book_id: book.id,
     )
-    render :show
+    render @favorited
   end
 end
