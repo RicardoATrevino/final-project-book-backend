@@ -13,6 +13,7 @@ ruby on rails
 bundle install
 rails db:create db:migrate db:seed
 ```
+YOU HAVE TO DO A BUNDLE INSTALL IT RELIES ON SOME GEMS 
 
 ## Usage
 
@@ -29,8 +30,3 @@ rails test
  ```
 note, i have not looked at the tests since like, basically day 2 of this project which was well over a week ago and it is now May 12, 2024, so I could be wrong on my aproximation of how much help i got on the tests but 100% i did hand write some tests.
 ```
-
-
-## Roadmap
-
-List any ideas you plan on implementing in the future.
